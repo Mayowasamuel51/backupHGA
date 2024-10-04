@@ -247,33 +247,6 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-        // const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
-        // let scrollPosition = 0;
-
-        // const totalSlidesWidth = swiperWrapper[0].scrollWidth;
-
-        // window.addEventListener('scroll', function () {
-        //     const translateXValue = scrollPosition * 0.3;
-        //     swiperWrapper.forEach((item, index) => {
-        //         if (index % 2 === 0) {
-        //             scrollPosition += 10;
-        //             item.style.transform = `translateX(-${translateXValue}px)`;
-        //         }
-        //         else {
-        //             scrollPosition = totalSlidesWidth
-        //             scrollPosition -= 10
-        //             if (scrollPosition <= 0) {
-        //                 scrollPosition = totalSlidesWidth; // Reset to the last slide
-        //                 item.style.transform = `translateX(${totalSlidesWidth}px)`; // Reset translation
-        //             }
-        //         }
-
-        //         if (translateXValue > totalSlidesWidth - window.innerWidth) {
-        //             scrollPosition = 0; // Reset to the first slide
-        //             item.style.transform = 'translateX(0px)'; // Reset translation
-        //         }
-        //     })
-        // });
         const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
         
         const totalSlidesWidth = swiperWrapper[0].scrollWidth;
@@ -295,7 +268,7 @@
 
 
             if (translateXValue > totalSlidesWidth || scrollPosition >= totalSlidesWidth) {
-                scrollPosition = 0;
+                // scrollPosition = 0;
             }
         })
     </script>
