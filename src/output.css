@@ -647,6 +647,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-44{
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -897,6 +907,14 @@ body {
 @media (min-width: 768px){
   .md\:-bottom-16{
     bottom: -4rem;
+  }
+
+  .md\:-bottom-20{
+    bottom: -5rem;
+  }
+
+  .md\:-bottom-\[70px\]{
+    bottom: -70px;
   }
 
   .md\:my-20{
