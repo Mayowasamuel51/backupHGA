@@ -623,6 +623,11 @@ video {
   margin-bottom: 7rem;
 }
 
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -771,6 +776,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pt-36{
   padding-top: 9rem;
 }
@@ -831,6 +841,10 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -1023,6 +1037,10 @@ body {
 
   .md\:leading-\[72px\]{
     line-height: 72px;
+  }
+
+  .md\:leading-\[82px\]{
+    line-height: 82px;
   }
 }
 

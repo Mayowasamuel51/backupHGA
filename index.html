@@ -13,18 +13,16 @@
 <body>
     <main class="landing overflow-hidden">
         <header>
-            <div class="py-6">
+            <div class="py-4">
                 <img src="./images/logo.png" alt="" class="w-32 mx-auto">
             </div>
         </header>
         <section class="flex justify-center items-center md:min-h-screen">
-            <div class="md:w-[1091px] text-center flex flex-col gap-4 md:my-20 my-28 text-white px-2">
+            <div class="md:w-[1091px] text-center flex flex-col gap-4 md:my-20 my-32 text-white px-2">
                 <p data-aos="fade-up" class="font-semibold md:text-lg text-xs">2024 LORD BALTIMORE DRIVE . WINDSOR MILL ,MD 21244 USA</p>
-                <h1 data-aos="fade-up" data-aos-delay="200" class="font-black md:text-[83px] md:leading-[72px] text-3xl">Higher Ground Assembly</h1>
+                <h1 data-aos="fade-up" data-aos-delay="200" class="font-black md:text-[83px] md:leading-[82px] text-3xl">Higher Ground Assembly</h1>
                 <p data-aos="fade-up" data-aos-delay="300" class="font-bold md:text-4xl ">Celebrates 20Years of Faith, Love, and Community!</p>
-                <p data-aos="fade-up" class="font-normal md:text-xl md:w-[708px] mx-auto text-xs">Welcome to Higher Ground Assembly's 20th
-                    Anniversary Celebration! We are beyond blessed to have you join us as we reflect on 10 years of
-                    God’s grace, worship, and service to our community.</p>
+                <p data-aos="fade-up" class="font-normal md:text-xl md:w-[708px] mx-auto text-xs">Welcome to Higher Ground Assembly's 20th Anniversary Celebration! We are beyond blessed to have you join us as we reflect on 10 years of God’s grace, worship, and service to our community.</p>
             </div>
         </section>
         <img class="z-10 absolute right-0 left-0 bottom-0 md:-bottom-16 w-full" src="./images/landingwave.svg" alt="">
@@ -108,7 +106,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
             startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
             initClassName: 'aos-init',
             animatedClassName: 'aos-animate',
@@ -119,10 +116,10 @@
 
 
             // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
+            offset: 120,
+            delay: 100, // values from 0 to 3000, with step 50ms
             duration: 500, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
+            easing: 'ease-in-out', // default easing for AOS animations
             once: true, // whether animation should happen only once - while scrolling down
             mirror: false, // whether elements should animate out while scrolling past them
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
