@@ -124,36 +124,36 @@
         <div class="swiper-wrapper my-10">
             <div class="swiper-slide ">
                 <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.22.49_26de736d.jpg" alt="">
+                    src="./images/gallery/IMG-20241002-WA0236.jpg" alt="">
             </div>
             <div class="swiper-slide ">
                 <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.24.00_1607df7e.jpg" alt="">
+                    src="./images/gallery/IMG-20241002-WA0237.jpg" alt="">
             </div>
             <div class="swiper-slide ">
                 <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.25.23_03e335c8.jpg" alt="">
+                    src="./images/gallery/IMG-20241002-WA0238.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0053.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0239.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0230.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0240.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0231.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0241.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0232.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0242.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0233.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0243.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0234.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0244.jpg" alt="">
             </div>
             <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0235.jpg" alt="">
+                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0245.jpg" alt="">
             </div>
         </div>
     </div>
@@ -240,39 +240,43 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5,
+            slidesPerView: 2,
             loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            breakpoints: {
+                740: {
+                    slidesPerView: 5,
+                },
+            }
         });
-        const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
-        
+        const swiperWrapper = Array.from(document.querySelectorAll('.swiper-wrapper'));
         const totalSlidesWidth = swiperWrapper[0].scrollWidth;
         let scrollPosition = 0;
 
+        function isInView(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+        }
         window.addEventListener('scroll', function () {
-            const translateXValue = scrollPosition * 0.3;
+            let translateXValue;
+            scrollPosition += 10; // Update scrollPosition value here
 
             swiperWrapper.forEach((item, index) => {
-                scrollPosition = index % 2 === 0 ? 0 : scrollPosition
-                if (index % 2 === 0) {
-                    item.style.transform = `translateX(-${translateXValue}px)`;
-                } else {
-                    item.style.transform = `translateX(-${translateXValue}px)`;
+                if (isInView(item)) {
+                    if (index % 2 === 0) {
+                        translateXValue = (-totalSlidesWidth + scrollPosition) * 0.3;
+                        item.style.transform = `translateX(${translateXValue}px)`;
+                    } else {
+                        translateXValue = scrollPosition * 0.3;
+                        item.style.transform = `translateX(-${translateXValue}px)`;
+                    }
                 }
             });
 
-            scrollPosition += 10;
-
-
-            if (translateXValue > totalSlidesWidth || scrollPosition >= totalSlidesWidth) {
-                // scrollPosition = 0;
+            if (scrollPosition * 0.3 > totalSlidesWidth || scrollPosition >= totalSlidesWidth) {
+                scrollPosition = 0;
             }
-        })
+        });
     </script>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
