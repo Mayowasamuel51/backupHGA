@@ -590,10 +590,6 @@ video {
   }
 }
 
-.visible{
-  visibility: visible;
-}
-
 .absolute{
   position: absolute;
 }
@@ -709,10 +705,6 @@ video {
 
 .animate-bounce{
   animation: bounce 1s infinite;
-}
-
-.resize{
-  resize: both;
 }
 
 .grid-cols-1{
@@ -848,24 +840,19 @@ video {
   line-height: 1.5rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-black{
@@ -929,11 +916,29 @@ body {
   transform: rotateX(180deg);
 }
 
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
 .gallery img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.ss-preload {
+  display: none;
+  overflow: hidden;
+  /* Prevent scrolling during the loading state */
+}
+
+/* Class when the page has finished loading */
+
+.ss-loaded {
+  overflow: auto;
+  /* Restore scrolling after loading is complete */
 }
 
 .hover\:from-\[\#C66800\]:hover{
@@ -1047,6 +1052,11 @@ body {
     line-height: 2.5rem;
   }
 
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -1069,11 +1079,6 @@ body {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:leading-\[82px\]{
@@ -1112,4 +1117,3 @@ body {
     width: 1108px;
   }
 }
-

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="./src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
      <!-- preloader
@@ -30,30 +32,30 @@
     </main>
     <section className="">
         <div class="gallery container mx-auto my-10 gap-10 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
-            <img src="./images/gallery/IMG-20241002-WA0053.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0230.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0231.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0232.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0233.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0234.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0235.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0236.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0237.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0238.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0239.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0240.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0241.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0242.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0243.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0244.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0245.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0246.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0247.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0248.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0249.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0250.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0252.jpg" alt="">
-            <img src="./images/gallery/IMG-20241002-WA0253.jpg" alt="">
+            <img src="./images/gallery/IMG-20241002-WA0053.jpg" alt="" data-aos="fade-up">
+            <img src="./images/gallery/IMG-20241002-WA0230.jpg" alt="" data-aos="fade-down">
+            <img src="./images/gallery/IMG-20241002-WA0231.jpg" alt="" data-aos="zoom-in">
+            <img src="./images/gallery/IMG-20241002-WA0232.jpg" alt="" data-aos="fade-left">
+            <img src="./images/gallery/IMG-20241002-WA0233.jpg" alt="" data-aos="fade-right">
+            <img src="./images/gallery/IMG-20241002-WA0234.jpg" alt="" data-aos="fade-up">
+            <img src="./images/gallery/IMG-20241002-WA0235.jpg" alt="" data-aos="fade-down">
+            <img src="./images/gallery/IMG-20241002-WA0236.jpg" alt="" data-aos="zoom-in">
+            <img src="./images/gallery/IMG-20241002-WA0237.jpg" alt="" data-aos="fade-left">
+            <img src="./images/gallery/IMG-20241002-WA0238.jpg" alt="" data-aos="fade-right">
+            <img src="./images/gallery/IMG-20241002-WA0239.jpg" alt="" data-aos="fade-up">
+            <img src="./images/gallery/IMG-20241002-WA0240.jpg" alt="" data-aos="fade-down">
+            <img src="./images/gallery/IMG-20241002-WA0241.jpg" alt="" data-aos="zoom-in">
+            <img src="./images/gallery/IMG-20241002-WA0242.jpg" alt="" data-aos="fade-left">
+            <img src="./images/gallery/IMG-20241002-WA0243.jpg" alt="" data-aos="fade-right">
+            <img src="./images/gallery/IMG-20241002-WA0244.jpg" alt="" data-aos="fade-up">
+            <img src="./images/gallery/IMG-20241002-WA0245.jpg" alt="" data-aos="fade-down">
+            <img src="./images/gallery/IMG-20241002-WA0246.jpg" alt="" data-aos="zoom-in">
+            <img src="./images/gallery/IMG-20241002-WA0247.jpg" alt="" data-aos="fade-left">
+            <img src="./images/gallery/IMG-20241002-WA0248.jpg" alt="" data-aos="fade-right">
+            <img src="./images/gallery/IMG-20241002-WA0249.jpg" alt="" data-aos="fade-up">
+            <img src="./images/gallery/IMG-20241002-WA0250.jpg" alt="" data-aos="fade-down">
+            <img src="./images/gallery/IMG-20241002-WA0252.jpg" alt="" data-aos="zoom-in">
+            <img src="./images/gallery/IMG-20241002-WA0253.jpg" alt="" data-aos="fade-left">
         </div>
     </section>
 
@@ -94,7 +96,26 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/load.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            useClassNames: false,
+            disableMutationObserver: false,
+            debounceDelay: 50,
+            throttleDelay: 99,
+            offset: 120,
+            delay: 100,
+            duration: 500,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 </body>
 </html>

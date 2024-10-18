@@ -30,9 +30,26 @@ body {
     transform: rotateX(180deg);
 }
 
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
 .gallery img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
+.ss-preload {
+    display: none;
+}
+
+.ss-preload {
+    overflow: hidden; /* Prevent scrolling during the loading state */
+}
+
+/* Class when the page has finished loading */
+.ss-loaded {
+    overflow: auto; /* Restore scrolling after loading is complete */
+}
