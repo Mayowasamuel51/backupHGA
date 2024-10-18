@@ -30,3 +30,9 @@ body {
     transform: rotateX(180deg);
 }
 
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
