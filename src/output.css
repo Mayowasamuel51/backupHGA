@@ -928,8 +928,12 @@ body {
      object-fit: cover;
 }
 
+#preloader {
+  position: fixed;
+  inset: 0;
+}
+
 .ss-preload {
-  display: none;
   overflow: hidden;
   /* Prevent scrolling during the loading state */
 }

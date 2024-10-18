@@ -41,8 +41,9 @@ body {
     object-fit: cover;
 }
 
-.ss-preload {
-    display: none;
+#preloader {
+    position: fixed;
+    inset: 0;
 }
 
 .ss-preload {
