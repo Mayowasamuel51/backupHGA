@@ -13,6 +13,13 @@
 </head>
 
 <body>
+    <!-- preloader
+    ================================================== -->
+    <div class="min-h-screen flex justify-center items-center" id="preloader">
+        <div id="loader" class="">
+            <img src="./images/logo.png" alt="" class="w-32 mx-auto animate-bounce">
+        </div>
+    </div>
     <main class="landing overflow-hidden">
         <header>
             <div class="py-4">
@@ -86,86 +93,86 @@
         </div>
     </section>
 
-    <section class="md:px-32 px-4 md:py-10 py-6 flex flex-col gap-20"></section>
-    <div class="text-center lg:w-[932px] w-full mx-auto flex flex-col gap-4 my-10">
-        <h1 class="text-center font-semibold md:text-6xl text-3xl">Gallery</h1>
-    </div>
-    <div class="swiper mySwiper w-full mx-auto overflow-hidden">
-        <div class="swiper-wrapper my-10">
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.22.49_26de736d.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.24.00_1607df7e.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover"
-                    src="./images/gallery/WhatsApp Image 2024-10-04 at 07.25.23_03e335c8.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0053.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0230.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0231.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0232.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0233.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0234.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0235.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0250.jpg" alt="">
+    <!-- <section class="md:px-32 px-4 md:py-10 py-6 flex flex-col gap-20">
+        <div class="text-center lg:w-[932px] w-full mx-auto flex flex-col gap-4 my-10">
+            <h1 class="text-center font-semibold md:text-6xl text-3xl">Gallery</h1>
+        </div>
+        <div class="swiper mySwiper w-full mx-auto overflow-hidden">
+            <div class="swiper-wrapper my-10">
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover"
+                        src="./images/gallery/WhatsApp Image 2024-10-04 at 07.22.49_26de736d.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover"
+                        src="./images/gallery/WhatsApp Image 2024-10-04 at 07.24.00_1607df7e.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover"
+                        src="./images/gallery/WhatsApp Image 2024-10-04 at 07.25.23_03e335c8.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0053.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0230.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0231.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0232.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0233.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0234.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0235.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0250.jpg" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="swiper mySwiper w-full mx-auto overflow-hidden">
-        <div class="swiper-wrapper my-10">
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0236.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0237.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0238.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0239.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0240.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0241.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0242.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0243.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0244.jpg" alt="">
-            </div>
-            <div class="swiper-slide ">
-                <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0245.jpg" alt="">
+        <div class="swiper mySwiper w-full mx-auto overflow-hidden">
+            <div class="swiper-wrapper my-10">
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0236.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0237.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0238.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0239.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0240.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0241.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0242.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0243.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0244.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="w-full aspect-square object-cover" src="./images/gallery/IMG-20241002-WA0245.jpg" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    </section>
+    </section> -->
 
 
     <div class="container mx-auto my-20">
@@ -215,7 +222,10 @@
     </footer>
 
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/load.js"></script>
     <script>
         AOS.init({
             startEvent: 'DOMContentLoaded',
@@ -235,7 +245,7 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
             loop: true,
@@ -273,7 +283,7 @@
                 scrollPosition = 0;
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

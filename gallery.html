@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
+     <!-- preloader
+    ================================================== -->
+    <div class="min-h-screen flex justify-center items-center" id="preloader">
+        <div id="loader" class="">
+            <img src="./images/logo.png" alt="" class="w-32 mx-auto animate-bounce">
+        </div>
+    </div>
     <main class="landing overflow-hidden">
         <header>
-            <div class="py-4">
-                <img src="./images/logo.png" alt="" class="w-32 mx-auto">
-            </div>
+            <a href="./index.html">
+                <div class="py-4">
+                    <img src="./images/logo.png" alt="" class="w-32 mx-auto">
+                </div>
+            </a>
         </header>
         <section class="flex justify-center items-center md:min-h-screen">
             <div class="md:w-[1091px] text-center flex flex-col gap-4 md:my-20 my-44 text-white px-2">
-                <h1 class="text-lg md:text-3xl font-bold ">Gallery</h1>
+                <h1 class="text-xl md:text-5xl font-bold ">Gallery</h1>
             </div>
         </section>
     </main>
@@ -84,5 +93,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/load.js"></script>
 </body>
 </html>
